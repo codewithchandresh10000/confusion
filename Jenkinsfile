@@ -3,7 +3,7 @@ pipeline {
     environment {
         IMAGE_NAME = 'codewithchandresh10000/flask-jenkins-demo'
         CONTAINER_NAME = 'flask-jenkins-app'
-        DOCKER_HOST = 'npipe:////./pipe/docker_engine'
+        DOCKER_HOST = 'unix:///var/run/docker.sock'
     }
     stages {
         stage('Checkout') {
