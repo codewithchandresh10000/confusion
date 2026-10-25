@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('''Checkout''') {
             steps {
-                git branch: '''main''', credentialsId: '''github-creds''', url: '''https://github.com/codewithchandresh10000/flask-jenkins-docker.git'''
+                git branch: '''main''', credentialsId: '''github-creds''', url: '''https://github.com/codewithchandresh10000/confusion.git'''
             }
         }
     }
